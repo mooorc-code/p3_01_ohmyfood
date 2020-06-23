@@ -1,51 +1,94 @@
-$color-base: #579c87
+$mint-green: #579c87
 
-$color-txt: #fdcb46
+$yellow-txt: #fdcb46
+
 
 body
   padding: 0
   margin: 0
 
-header
-  display: flex
-  justify-content: center
-  width: 100%
-  background-color: $color-base
+  header
+    display: flex
+    justify-content: center
+    width: 100%
+    background-color: $mint-green
 
-h1
-  color: $color-txt
-
-main
-  display: flex
-  flex-direction: column
-  align-items: center
-  width: 100%
-
-  padding-top: 25px
-  padding-bottom: 25px
+    h1
+      color: $yellow-txt
 
 
-img
-  width: 250px
-  height: 350px
+  main
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 15px 0 30px 0
+
+    .grid
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3))
+
+    a
+      text-decoration: none
+
+    .m1
+      background-color: #FCDFDB
+      h2, h3
+        color: #3C1218
+    .m2
+      background-color: #FFF5FE
+      h2
+        color: #C77412
+    .m3
+      background-color: #F9F9F9
+      h2
+        color: #0887FB
+    .m4
+      background-color: #FDFFFD
+      h2
+        //color: linear-gradient(to left, #BFFF7E, #72BF56)
+        color: #72BF56
 
 
-.block-menu
-  margin-top: 25px
-  margin-bottom: 25px
-
-footer
-  display: flex
-  background-color: $color-base
-
-
-.block-footer
-  display: flex
-  justify-content: space-between
-  width: 100%
-  margin: 25px
+    .block-menu
+      margin: 40px 5px
+      display: flex
+      justify-content: center
+      padding: 100px 40px
+      text-align: center
 
 
-.block-footer a
-  text-decoration: none
-  color: $color-txt
+    .soon
+      margin-bottom: 80px
+
+      button
+        border: none
+        border-radius: 15px
+        background-color: $mint-green
+        height: 4rem
+        width: 250px
+        color: $yellow-txt
+        font-size: 25px
+
+  footer
+    display: flex
+    background-color: $mint-green
+    position: fixed
+    bottom: 0
+    width: 100%
+
+    .block-footer
+      display: flex
+      justify-content: space-between
+      width: 100%
+      margin: 25px
+      font-weight: bold
+      font-size: 1rem
+
+    .block-footer a
+      text-decoration: none
+      color: $yellow-txt
+
+
+
+
+
+

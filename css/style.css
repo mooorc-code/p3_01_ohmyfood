@@ -1,42 +1,66 @@
 body {
   padding: 0;
   margin: 0; }
-
-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #579c87; }
-
-h1 {
-  color: #fdcb46; }
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px; }
-
-img {
-  width: 250px;
-  height: 350px; }
-
-.block-menu {
-  margin-top: 25px;
-  margin-bottom: 25px; }
-
-footer {
-  display: flex;
-  background-color: #579c87; }
-
-.block-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 25px; }
-
-.block-footer a {
-  text-decoration: none;
-  color: #fdcb46; }
+  body header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #579c87; }
+    body header h1 {
+      color: #fdcb46; }
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 30px 0;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); }
+    body main a {
+      text-decoration: none; }
+    body main .m1 {
+      background-color: #FCDFDB; }
+      body main .m1 h2, body main .m1 h3 {
+        color: #3C1218; }
+    body main .m2 {
+      background-color: #FFF5FE; }
+      body main .m2 h2 {
+        color: #C77412; }
+    body main .m3 {
+      background-color: #F9F9F9; }
+      body main .m3 h2 {
+        color: #0887FB; }
+    body main .m4 {
+      background-color: #FDFFFD; }
+      body main .m4 h2 {
+        color: #72BF56; }
+    body main .block-menu {
+      margin: 40px 5px;
+      display: flex;
+      justify-content: center;
+      padding: 100px 40px;
+      text-align: center; }
+    body main .soon {
+      margin-bottom: 80px; }
+      body main .soon button {
+        border: none;
+        border-radius: 15px;
+        background-color: #579c87;
+        height: 4rem;
+        width: 250px;
+        color: #fdcb46;
+        font-size: 25px; }
+  body footer {
+    display: flex;
+    background-color: #579c87;
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+    body footer .block-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 25px;
+      font-weight: bold;
+      font-size: 1rem; }
+    body footer .block-footer a {
+      text-decoration: none;
+      color: #fdcb46; }
