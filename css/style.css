@@ -1,42 +1,68 @@
 body {
   padding: 0;
   margin: 0; }
+  body header a {
+    text-decoration: none; }
   body header {
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: #579c87; }
     body header h1 {
-      color: #fdcb46; }
+      color: #fdcb46;
+      font-size: 4rem;
+      font-family: Arial;
+      font-weight: bold;
+      letter-spacing: -6px; }
   body main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 0 30px 0;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); }
+    margin: 15px 0 30px 0; }
+    body main .grid {
+      font-size: 25px; }
+    body main .block-menu {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); }
+    body main a .icon_note {
+      width: 50px;
+      height: 50px; }
     body main a {
       text-decoration: none; }
     body main .m1 {
       background-color: #FCDFDB; }
       body main .m1 h2, body main .m1 h3 {
+        font-family: "Devonshire-Regular", sans-serif;
         color: #3C1218; }
     body main .m2 {
-      background-color: #FFF5FE; }
+      background-color: #FFF5FE;
+      font-family: 'CroissantOne-Regular', sans-serif; }
+      body main .m2 h3 {
+        background: linear-gradient(to right, #C77412, #905BFD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
       body main .m2 h2 {
         color: #C77412; }
     body main .m3 {
       background-color: #F9F9F9; }
+      body main .m3 h3 {
+        background: linear-gradient(to right, #0431DF, #0887FB);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
       body main .m3 h2 {
         color: #0887FB; }
     body main .m4 {
       background-color: #FDFFFD; }
+      body main .m4 h3 {
+        background: linear-gradient(to right, #72BF56, #BFFF7E);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
       body main .m4 h2 {
         color: #72BF56; }
     body main .block-menu {
-      margin: 40px 5px;
+      margin: 15px;
       display: flex;
       justify-content: center;
-      padding: 100px 40px;
+      padding: 80px 15px;
       text-align: center; }
     body main .soon {
       margin-bottom: 80px; }
@@ -60,7 +86,12 @@ body {
       width: 100%;
       margin: 25px;
       font-weight: bold;
-      font-size: 1rem; }
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1px; }
     body footer .block-footer a {
       text-decoration: none;
       color: #fdcb46; }
+
+.side-rotate {
+  transform: scalex(-1); }

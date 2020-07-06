@@ -1,7 +1,19 @@
-.grid {
+body main .grid {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-gap: 25px; }
+  grid-gap: 10px; }
+  body main .grid .block-menu {
+    padding: 100px 50px; }
 
-.block-menu {
-  margin: 0; }
+body main .icon_note {
+  width: 100px;
+  height: 100px; }
+
+body main h4 {
+  font-size: 3rem; }
+
+body main h5 {
+  font-size: 1.5rem; }
+
+body .soon {
+  text-align: center; }

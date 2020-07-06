@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Devonshire-Regular', sans-serif;
+    src: url("fonts/note/Devonshire-Regular.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CroissantOne-Regular';
+    src: url('fonts/chic/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

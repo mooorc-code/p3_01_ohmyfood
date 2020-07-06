@@ -1,0 +1,40 @@
+body section {
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center; }
+
+body .container_menu {
+  display: flex;
+  flex-direction: column; }
+  body .container_menu article div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px; }
+
+body .title_sidebar img {
+  width: 200px;
+  height: auto; }
+
+body .icon_top {
+  width: 50px;
+  height: 50px; }
+
+body .icon_bottom {
+  width: 20px;
+  height: 25px; }
+
+body .m1 {
+  color: #3C1218; }
+
+body .m2 .m2_color-art1 {
+  color: #C67412; }
+
+body .m2 .m2_color-art2 {
+  color: #A56799; }
+
+body .m2 .m2_color-art3 {
+  color: #6E4CCC; }
