@@ -30,27 +30,42 @@ body
     display: flex
     flex-direction: column
     align-items: center
-    margin: 15px 0 30px 0
 
     .grid
-      font-size: 25px
+      font-size: 22px
+
 
     .block-menu
       filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3))
 
-    a .icon_note
-
-      width: 50px
-      height: 50px
+    .block-menu
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 80px 0
+      margin: 30px
+      text-align: center
 
     a
       text-decoration: none
+      transition: transform 300ms
+      padding: 70px 50px
+
+
+    a .icon_note
+      width: 50px
+      height: 50px
+
+    a:hover
+      transform: scale(1.2)
+      transition: opacity .5s ease-out
+
 
     .m1
       background-color: #FCDFDB
+      font-family: "Devonshire-Regular", sans-serif
 
       h2, h3
-        font-family: "Devonshire-Regular", sans-serif
         color: #3C1218
 
     .m2
@@ -68,6 +83,7 @@ body
 
     .m3
       background-color: #F9F9F9
+      font-family: 'dancingScript-regular', sans-serif
 
       h3
         background: linear-gradient(to right, #0431DF, #0887FB)
@@ -79,6 +95,8 @@ body
 
     .m4
       background-color: #FDFFFD
+      font-family: 'kaushanScript-regular', sans-serif
+
 
       h3
         background: linear-gradient(to right, #72BF56, #BFFF7E)
@@ -88,25 +106,40 @@ body
       h2
         color: #72BF56
 
-    .block-menu
-      margin: 15px
+    .btn
       display: flex
       justify-content: center
-      padding: 80px 15px
-      text-align: center
+      align-items: baseline
+      margin-bottom: 140px
+      border: none
+      border-radius: 15px
+      background-color: $mint-green
+      padding: 0 25px
 
 
-    .soon
-      margin-bottom: 80px
+      color: $yellow-txt
+      font-size: 25px
 
-      button
-        border: none
-        border-radius: 15px
-        background-color: $mint-green
-        height: 4rem
-        width: 250px
-        color: $yellow-txt
-        font-size: 25px
+
+      .point
+        background-color: $yellow-txt
+        height: 6px
+        width: 6px
+        border-radius: 3rem
+
+      .point
+        -webkit-animation: button 1.5s infinite
+        animation: button 1.5s infinite
+
+      .point:nth-child(1)
+        -webkit-animation-delay: 0s
+
+      .point:nth-child(2)
+        -webkit-animation-delay: 5s
+
+      .point:nth-child(3)
+        -webkit-animation-delay: 10s
+
 
   footer
     display: flex
@@ -130,5 +163,34 @@ body
       text-decoration: none
       color: $yellow-txt
 
+footer
+  a:hover
+    animation: wiggle 1.2s infinite
+    animation-timing-function: linear
+
 .side-rotate
   transform: scalex(-1)
+
+
+@keyframes button
+  0%
+    opacity: 1
+    -webkit-transform: scale(1)
+
+  100%
+    opacity: 0
+    -webkit-transform: scale(1.5)
+
+@keyframes wiggle
+  0%
+    transform: rotate(1.0deg)
+  20%
+    transform: rotate(-1.0deg)
+  40%
+    transform: rotate(1.0deg)
+  60%
+    transform: rotate(-1.0deg)
+  80%
+    transform: rotate(1.0deg)
+  100%
+    transform: rotate(-1.0deg)

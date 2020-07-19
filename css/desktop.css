@@ -1,9 +1,7 @@
 body main .grid {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-gap: 10px; }
-  body main .grid .block-menu {
-    padding: 100px 50px; }
+  grid-gap: 30px; }
 
 body main .icon_note {
   width: 100px;
@@ -15,5 +13,5 @@ body main h4 {
 body main h5 {
   font-size: 1.5rem; }
 
-body .soon {
+body .btn {
   text-align: center; }
