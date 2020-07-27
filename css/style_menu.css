@@ -7,14 +7,6 @@ body section {
 body .container_menu {
   display: flex;
   flex-direction: column; }
-  body .container_menu article div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 25px; }
-    body .container_menu article div p {
-      padding: 0 50px; }
 
 body .title_sidebar img {
   width: 200px;
@@ -29,21 +21,9 @@ body .icon_bottom {
   position: relative;
   bottom: -10px; }
 
-body .m1 {
-  font-family: "Devonshire-Regular", sans-serif;
-  color: #3C1218; }
-
-body .m2 {
-  font-family: 'CroissantOne-Regular', sans-serif; }
-  body .m2 .m2_color-art1 {
-    color: #C67412; }
-  body .m2 .m2_color-art2 {
-    color: #A56799; }
-  body .m2 .m2_color-art3 {
-    color: #6E4CCC; }
-
-body .m3 {
-  font-family: 'dancingScript-regular', sans-serif; }
-
-body .m4 {
-  font-family: 'kaushanScript-regular', sans-serif; }
+h5 {
+  display: inline-block;
+  background: linear-gradient(to top, #3C1218 0%, #3C1218 5%, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.3s;
+  font-weight: bold; }

@@ -3,12 +3,6 @@
   margin-left: auto
   margin-right: auto
 
-@mixin flex-text
-  display: flex
-  flex-flow: row wrap
-  align-items: center
-  justify-content: space-between
-  padding: 0 25px
 
 body
   section
@@ -20,13 +14,6 @@ body
     display: flex
     flex-direction: column
 
-
-    article
-      div
-        @include flex-text
-
-        p
-          padding: 0 50px
 
   .title_sidebar img
     width: 200px
@@ -42,30 +29,13 @@ body
     position: relative
     bottom: -10px
 
-  .m1
-    font-family: "Devonshire-Regular", sans-serif
-    color: #3C1218
 
-  .m2
-    font-family: 'CroissantOne-Regular', sans-serif
-
-    .m2_color-art1
-      color: #C67412
-
-    .m2_color-art2
-      color: #A56799
-
-    .m2_color-art3
-      color: #6E4CCC
-
-  .m3
-    font-family: 'dancingScript-regular', sans-serif
-
-  .m4
-    font-family: 'kaushanScript-regular', sans-serif
-
-
-      
+h5
+  display: inline-block
+  background: linear-gradient(to top, #3C1218 0%, #3C1218 5%, transparent 2px) no-repeat
+  background-size: 0 100%
+  transition: background-size 0.3s
+  font-weight: bold
 
 
 

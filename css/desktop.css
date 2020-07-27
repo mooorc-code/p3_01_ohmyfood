@@ -8,10 +8,19 @@ body main .icon_note {
   height: 100px; }
 
 body main h4 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
-body main h5 {
-  font-size: 1.5rem; }
+body main section article {
+  font-size: 1rem; }
+  body main section article div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0; }
+    body main section article div p {
+      padding: 0 50px;
+      font-size: 1rem; }
 
 body .btn {
   text-align: center; }

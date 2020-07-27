@@ -1,3 +1,11 @@
+@mixin flex-text
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: space-between
+  padding: 0
+
+
 body
 
   main
@@ -12,10 +20,19 @@ body
       height: 100px
 
     h4
-      font-size: 3rem
+      font-size: 4rem
 
-    h5
-      font-size: 1.5rem
+
+    section
+      article
+        font-size: 1rem
+
+        div
+          @include flex-text
+
+          p
+            padding: 0 50px
+            font-size: 1rem
 
   .btn
     text-align: center
