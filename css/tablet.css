@@ -28,7 +28,6 @@ body .m4 img {
 
 @media screen and (max-width: 768px) {
   article div {
-    display: flex;
     justify-content: center; }
     article div img {
       width: 20%;

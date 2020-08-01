@@ -22,8 +22,6 @@ body .icon_bottom {
   bottom: -10px; }
 
 h5 {
-  display: inline-block;
-  background: linear-gradient(to top, #3C1218 0%, #3C1218 5%, transparent 2px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.3s;
-  font-weight: bold; }
+  color: inherit;
+  background: linear-gradient(to top, #3C1218 0%, #3C1218 10%, transparent 10.01%) no-repeat/0 100%;
+  transition: background-size 0.3s; }
