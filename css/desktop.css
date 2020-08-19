@@ -10,17 +10,24 @@ body main .icon_note {
 body main h4 {
   font-size: 4rem; }
 
-body main section article {
+body main article {
   font-size: 1rem; }
-  body main section article div {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0; }
-    body main section article div p {
-      padding: 0 50px;
-      font-size: 1rem; }
+  body main article .title_sidebar {
+    padding: 0 50px; }
+  body main article .title_sidebar > img {
+    width: 260px;
+    height: auto; }
+  body main article div p {
+    justify-content: space-between; }
+
+body main article > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px; }
 
 body .btn {
   text-align: center; }

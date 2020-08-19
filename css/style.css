@@ -6,7 +6,6 @@ body {
   body header {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: #579c87; }
     body header h1 {
       color: #fdcb46;
@@ -18,6 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    body main .icon_top {
+      height: 50px; }
+    body main .icon_bottom {
+      width: 50px;
+      height: 30px;
+      position: relative;
+      bottom: -10px;
+      padding: 0; }
     body main .grid {
       font-size: 22px; }
     body main .block-menu {
@@ -26,9 +33,11 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 80px 0;
-      margin: 30px;
-      text-align: center; }
+      margin: 30px 0;
+      text-align: center;
+      margin-bottom: 125px; }
     body main .grid a {
       text-decoration: none;
       transition: transform 300ms;
@@ -103,31 +112,33 @@ body {
         -webkit-animation-delay: 5s; }
       body main .btn .point:nth-child(3) {
         -webkit-animation-delay: 10s; }
-  body footer {
-    display: flex;
-    background-color: #579c87;
-    position: fixed;
-    bottom: 0;
-    width: 100%; }
-    body footer .block-footer {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin: 25px;
-      font-weight: bold;
-      font-family: Arial;
-      font-size: 25px;
-      letter-spacing: -1px; }
-    body footer .block-footer a {
-      text-decoration: none;
-      color: #fdcb46; }
-
-footer a:hover {
-  animation: wiggle 1.2s infinite;
-  animation-timing-function: linear; }
 
 .side-rotate {
   transform: scalex(-1); }
+
+footer {
+  display: flex;
+  background-color: #579c87;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  footer .block-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 25px;
+    letter-spacing: -1px;
+    text-align: center; }
+  footer .block-footer a {
+    text-decoration: none;
+    color: #fdcb46; }
+  footer a:hover {
+    animation: wiggle 1.2s infinite;
+    animation-timing-function: linear; }
 
 @keyframes button {
   0% {
@@ -159,11 +170,21 @@ footer a:hover {
   font-size: 1rem;
   font-family: Arial;
   font-weight: bold; }
-  .block-mentions a {
-    padding: 0; }
+
+a {
+  padding: 0; }
 
 @media screen and (max-width: 450px) {
   .title_sidebar img {
-    visibility: hidden; }
-  article {
-    font-size: 1rem; } }
+    display: none;
+    width: 260px; } }
+
+article {
+  font-size: 1rem;
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  img {
+    height: auto;
+    padding: 0 15px;
+    width: 200px; } }

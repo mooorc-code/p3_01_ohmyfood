@@ -1,12 +1,23 @@
 body
   main
-    article
-      margin: 0 80px
-      font-size: 1rem
+    .block-menu
+      margin: 30px 30px
+      margin-bottom: 125px
 
-      .title_sidebar
-        display: flex
-        justify-content: center
+      article
+        margin: 0 80px
+        font-size: 1rem
+
+        .title_sidebar
+          display: flex
+          justify-content: space-between
+
+        .title_sidebar > h5
+          background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom / 0 100%
+          transition: background-size .3s
+
+        .title_sidebar > h5:hover
+          background-size: 100% 100%
 
 
   .m2
@@ -39,22 +50,9 @@ body
     .m3-art3
       img
         filter: invert(48%) sepia(51%) saturate(2120%) hue-rotate(182deg) brightness(101%) contrast(95%)
-  //color: #229DF9
 
 
-  .m4
-    img
-      //background: linear-gradient(to right, #72BF56, #BFFF7E)
-      filter: invert(72%) sepia(26%) saturate(851%) hue-rotate(59deg) brightness(89%) contrast(86%)
 
 
-@media screen and (max-width: 768px)
-  article div
-    justify-content: center
 
-
-    img
-      width: 20%
-      height: auto
-      padding: 0 15px
 

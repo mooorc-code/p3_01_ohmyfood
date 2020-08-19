@@ -3,11 +3,10 @@
   flex-flow: row wrap
   align-items: center
   justify-content: space-between
-  padding: 0
+  text-align: center
 
 
 body
-
   main
     .grid
       display: grid
@@ -23,17 +22,25 @@ body
       font-size: 4rem
 
 
-    section
-      article
-        font-size: 1rem
+    article
 
-        div
-          @include flex-text
+      font-size: 1rem
 
-          p
-            padding: 0 50px
-            font-size: 1rem
+      .title_sidebar
+        padding: 0 50px
+
+      .title_sidebar > img
+        width: 260px
+        height: auto
+
+
+      div p
+        justify-content: space-between
+
+    article > div
+      @include flex-text
+      padding-left: 100px
+      padding-right: 100px
 
   .btn
     text-align: center
-
